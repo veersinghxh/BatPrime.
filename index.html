@@ -474,7 +474,83 @@ upcoming movies 2025, latest Bollywood movies, latest Hollywood movies, movie re
       </div>
     </div>
   </section>
+<!-- traimer section -->
+<section style="background-color: #121212; color: #fff; font-family: 'sans-serif'; padding: 20px;">
+    
 
+    <style>
+        .h2bold {
+    color: #facc15; /* Tailwind's yellow-400 */
+    font-weight: bold;
+    margin-bottom: 12px;
+    user-select: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+        
+
+        .video-wrapper {
+            flex: 0 0 auto;
+            width: 80vw;
+            max-width: 560px;
+            position: relative;
+            scroll-snap-align: start;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-wrapper:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 30px rgba(0, 255, 231, 0.3);
+        }
+
+        .video-wrapper::before {
+            content: "";
+            display: block;
+            padding-top: 56.25%; /* 16:9 */
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+
+    <h2 class="h2bold"> Recently release trailers </h2>
+
+    <div style="
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    " 
+    onwheel="this.scrollLeft += event.deltaY">
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/xGQuT1wm2qk?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fyoutu.be%2FYH6k5weqwy8%3Fsi%3DE8wVj78VqO3b4Uyj&key=925108d922be940af814f71907a7df4b" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/CE9q1dychEg?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fyoutu.be%2FdK1W-AViQ-M%3Fsi%3Dtt2AMR_2na7a3xkG&key=925108d922be940af814f71907a7df4b" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+<!-- end trailer section-->
+  
 
 
   <!-- webseries  Fan Favorites -->
